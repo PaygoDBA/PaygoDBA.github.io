@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
+            background-color: #f8f9fa;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
         header {
-            background-color: #0056b3;
+            background: linear-gradient(90deg, #0056b3, #003d80);
             color: #fff;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         header .container {
             display: flex;
@@ -27,6 +39,10 @@
             margin: 0 auto;
             padding: 0 1rem;
         }
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
         nav ul {
             list-style: none;
             display: flex;
@@ -34,19 +50,30 @@
             padding: 0;
         }
         nav ul li {
-            margin-left: 1rem;
+            margin-left: 1.5rem;
         }
         nav ul li a {
             color: #fff;
-            text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Hero Section */
         .hero {
-            background: #f4f4f4;
-            padding: 2rem 1rem;
+            background: linear-gradient(135deg, #d9f2ff, #b3e5fc);
+            padding: 3rem 1rem;
             text-align: center;
         }
         .hero h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #0056b3;
+        }
+        .hero p {
+            font-size: 1.1rem;
             margin-bottom: 1rem;
         }
         .cta-button {
@@ -55,31 +82,65 @@
             padding: 0.75rem 1.5rem;
             background: #0056b3;
             color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
+        .cta-button:hover {
+            background: #003d80;
+        }
+
+        /* Sections */
         section {
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             max-width: 1200px;
             margin: 0 auto;
         }
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: #0056b3;
+        }
+
+        /* Services */
         .service-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
+            gap: 2rem;
         }
         .service {
-            background: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+        .service h3 {
+            font-size: 1.5rem;
+            color: #0056b3;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        #contact p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
         footer {
-            background: #333;
+            background: #003d80;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -102,28 +163,18 @@
         <div class="container">
             <h2>Welcome to PAY-AS-YOU-GO DBA</h2>
             <p>You have a database, or a data warehouse, or an ODS, whatever.</p>
-            <p>You need DBA's help occasionally.</p>
-            <p>But you do not have a fulltime DBA on the payroll.</p>
-            <p>Anyway, the database systems run smoothly most of the time. </p>
-            <p>You do not need a fulltime DBA, who has not enough workload, and get bored.</p>
-            <p>You ONLY need DBA's help "occasionally"!</p>
-            <p>You do not need to start a hiring process. </p>
-            <p>---------------------------------------------------------------------------------- </p>
             <p>Contact us NOW, pay by the actual hours.</p>
             <p>We provide service in English, French & Chinese. </p>
-            <p>Service Area: onsite for NYC/NJ/CT Metropolitan, remote for everywhere in USA & Canada.</p> 
+            <p>Service Area: onsite for NYC/NJ/CT Metropolitan, remote for everywhere in USA & Canada.</p>
             <a href="#contact" class="cta-button">Get in Touch</a>
-            <p>---------------------------------------------------------------------------------- </p>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>With an impressive career spanning over 30 years, We bring a wealth of knowledge and experience in the industry.</p>
-            <p>We offer exceptional skill in database management, design, optimization, Business Intelligence, ETL/ELT, and data migration.</p>
-            <p>Our journey in the world of databases began three decades ago, and since then, we have honed our craft across various sectors, including banking, telecommunication, insurance, finance, healthcare, retail, and technology.</p>
-            <p>This extensive experience has equipped us with a unique perspective and a comprehensive understanding of the diverse needs and challenges faced by different industries.</p>
+            <p>With over 30 years of experience, we specialize in database management, design, optimization, and more.</p>
+            <p>Our expertise spans across industries such as banking, healthcare, retail, and technology.</p>
         </div>
     </section>
 
@@ -133,27 +184,15 @@
             <div class="service-list">
                 <div class="service">
                     <h3>DBA Routine Services</h3>
-                    <p>Database Maintenance and Management, Backup and Recovery, Updates and Patches, etc.</p>
-                    <p>Database Design and server-side Development for stored procedure, UDF, trigger</p>
-                    <p>Performance Monitoring and Tuning</p>
-                    <p>Security Management, User Access Control, Security Audits</p>
-                    <p>Capacity Planning and Scalability</p>
-                    <p>Documentation and Reporting</p>
-                    <p>Automation and Scripting</p>
+                    <p>Maintenance, tuning, backup, security, and documentation.</p>
                 </div>
                 <div class="service">
                     <h3>Consulting Services</h3>
-                    <p>The migration of on-premise database server farms to cloud platforms, e.g., Azure ecosystem, AWS ecosystem, GCP for middle-size and small enterprises.</p>
-                    <p>The migration to next-gen cloud solutions, e.g., Databricks, Snowflake.</p>
-                    <p>Microsoft BI solution (SSIS, SSRS, SSAS, Power BI) for middle-size and small enterprises.</p>
-                    <p>Low-cost database/BI solution for middle-size and small enterprises utilizing open-source products, e.g., PostgreSQL, MySQL, DBT, Airflow, Pentaho, etc.</p>
-                    <p>Legacy systems, e.g., IBM z/OS, various old commercial UNIX systems.</p>
-                    <p>Enterprise ETL/ELT solutions using Datastage, Informatica, ABInitio, ODI, etc.</p>
-                    <p>Enterprise reporting solutions based on Brio, OBIEE (Siebel Analytics), Crystal Report, etc.</p>
+                    <p>Cloud migrations, BI solutions, and legacy system support.</p>
                 </div>
                 <div class="service">
                     <h3>Tutoring Services</h3>
-                    <p>Personal tutoring service for IT professionals who are not familiar with legacy systems (from Mainframe to Client-Server era), old Enterprise tools & solutions.</p>
+                    <p>Personal tutoring for IT professionals unfamiliar with legacy systems.</p>
                 </div>
             </div>
         </div>
@@ -164,7 +203,6 @@
             <h2>Contact Us</h2>
             <p>Email: support@paygodba.com</p>
             <p>Phone: (929) 299-6689</p>
-            <p>---------------------------------------------------------------------------------- </p>
         </div>
     </section>
 
