@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAY-AS-YOU-GO DBA Services</title>
+    <title>PAY-AS-YOU-GO DBA</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
+            padding: 0;
             line-height: 1.6;
             color: #333;
         }
         header {
-            background: #0056b3;
-            color: white;
+            background-color: #0056b3;
+            color: #fff;
             padding: 1rem 0;
         }
         header .container {
@@ -28,16 +29,17 @@
         }
         nav ul {
             list-style: none;
+            display: flex;
             margin: 0;
             padding: 0;
-            display: flex;
         }
         nav ul li {
             margin-left: 1rem;
         }
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
         .hero {
             background: #f4f4f4;
@@ -47,15 +49,12 @@
         .hero h2 {
             margin-bottom: 1rem;
         }
-        .hero p {
-            margin-bottom: 0.5rem;
-        }
         .cta-button {
             display: inline-block;
             margin-top: 1rem;
             padding: 0.75rem 1.5rem;
             background: #0056b3;
-            color: white;
+            color: #fff;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -68,17 +67,17 @@
         .service-list {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
+            gap: 1.5rem;
         }
         .service {
             background: #f9f9f9;
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         footer {
             background: #333;
-            color: white;
+            color: #fff;
             text-align: center;
             padding: 1rem 0;
         }
@@ -87,7 +86,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>PAY-AS-YOU-GO DBA</h1>
+            <h1>PAY-GO DBA</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -102,21 +101,29 @@
     <section id="home" class="hero">
         <div class="container">
             <h2>Welcome to PAY-AS-YOU-GO DBA</h2>
-            <p>We provide on-demand database administration services tailored to your needs.</p>
-            <p>Why hire a full-time DBA when you only need occasional support?</p>
-            <p>Our expert team ensures your database systems run smoothly without the overhead of full-time staffing.</p>
-            <p>Contact us today and pay only for the hours you use!</p>
-            <p><strong>Languages:</strong> English, French, Chinese</p>
-            <p><strong>Service Area:</strong> Onsite for NYC/NJ/CT Metro, Remote across the USA & Canada</p>
+            <p>You have a database, or a data warehouse, or an ODS, whatever.</p>
+            <p>You need DBA's help occasionally.</p>
+            <p>But you do not have a fulltime DBA on the payroll.</p>
+            <p>Anyway, the database systems run smoothly most of the time. </p>
+            <p>You do not need a fulltime DBA, who has not enough workload, and get bored.</p>
+            <p>You ONLY need DBA's help "occasionally"!</p>
+            <p>You do not need to start a hiring process. </p>
+            <p>---------------------------------------------------------------------------------- </p>
+            <p>Contact us NOW, pay by the actual hours.</p>
+            <p>We provide service in English, French & Chinese. </p>
+            <p>Service Area: onsite for NYC/NJ/CT Metropolitan, remote for everywhere in USA & Canada.</p> 
             <a href="#contact" class="cta-button">Get in Touch</a>
+            <p>---------------------------------------------------------------------------------- </p>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>With over 30 years of experience, we specialize in database management, design, optimization, and data migration.</p>
-            <p>Our expertise spans industries including banking, telecommunications, healthcare, and technology, providing tailored solutions for diverse challenges.</p>
+            <p>With an impressive career spanning over 30 years, We bring a wealth of knowledge and experience in the industry.</p>
+            <p>We offer exceptional skill in database management, design, optimization, Business Intelligence, ETL/ELT, and data migration.</p>
+            <p>Our journey in the world of databases began three decades ago, and since then, we have honed our craft across various sectors, including banking, telecommunication, insurance, finance, healthcare, retail, and technology.</p>
+            <p>This extensive experience has equipped us with a unique perspective and a comprehensive understanding of the diverse needs and challenges faced by different industries.</p>
         </div>
     </section>
 
@@ -126,26 +133,27 @@
             <div class="service-list">
                 <div class="service">
                     <h3>DBA Routine Services</h3>
-                    <ul>
-                        <li>Database Maintenance and Management</li>
-                        <li>Backup and Recovery</li>
-                        <li>Performance Monitoring and Tuning</li>
-                        <li>Security Management and Access Control</li>
-                        <li>Documentation and Reporting</li>
-                    </ul>
+                    <p>Database Maintenance and Management, Backup and Recovery, Updates and Patches, etc.</p>
+                    <p>Database Design and server-side Development for stored procedure, UDF, trigger</p>
+                    <p>Performance Monitoring and Tuning</p>
+                    <p>Security Management, User Access Control, Security Audits</p>
+                    <p>Capacity Planning and Scalability</p>
+                    <p>Documentation and Reporting</p>
+                    <p>Automation and Scripting</p>
                 </div>
                 <div class="service">
                     <h3>Consulting Services</h3>
-                    <ul>
-                        <li>Cloud Migration (Azure, AWS, GCP)</li>
-                        <li>Next-Gen Cloud Solutions (Databricks, Snowflake)</li>
-                        <li>Open-Source Database Solutions (PostgreSQL, MySQL)</li>
-                        <li>Legacy Systems and Enterprise Solutions</li>
-                    </ul>
+                    <p>The migration of on-premise database server farms to cloud platforms, e.g., Azure ecosystem, AWS ecosystem, GCP for middle-size and small enterprises.</p>
+                    <p>The migration to next-gen cloud solutions, e.g., Databricks, Snowflake.</p>
+                    <p>Microsoft BI solution (SSIS, SSRS, SSAS, Power BI) for middle-size and small enterprises.</p>
+                    <p>Low-cost database/BI solution for middle-size and small enterprises utilizing open-source products, e.g., PostgreSQL, MySQL, DBT, Airflow, Pentaho, etc.</p>
+                    <p>Legacy systems, e.g., IBM z/OS, various old commercial UNIX systems.</p>
+                    <p>Enterprise ETL/ELT solutions using Datastage, Informatica, ABInitio, ODI, etc.</p>
+                    <p>Enterprise reporting solutions based on Brio, OBIEE (Siebel Analytics), Crystal Report, etc.</p>
                 </div>
                 <div class="service">
                     <h3>Tutoring Services</h3>
-                    <p>Personalized tutoring for IT professionals to master legacy systems and enterprise tools from Mainframe to modern solutions.</p>
+                    <p>Personal tutoring service for IT professionals who are not familiar with legacy systems (from Mainframe to Client-Server era), old Enterprise tools & solutions.</p>
                 </div>
             </div>
         </div>
@@ -154,14 +162,15 @@
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Email: <a href="mailto:support@paygodba.com">support@paygodba.com</a></p>
-            <p>Phone: <a href="tel:+15168557171">(516) 855-7171</a></p>
+            <p>Email: support@paygodba.com</p>
+            <p>Phone: (929) 299-6689</p>
+            <p>---------------------------------------------------------------------------------- </p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2021 PAYGO DBA. All rights reserved.</p>
+            <p>&copy; 2025 PAYGO-DBA. All rights reserved.</p>
         </div>
     </footer>
 </body>
